@@ -40,7 +40,7 @@ const Services = () => {
                         transition={{ delay: 0.2 }}
                         className="text-4xl md:text-5xl font-bold text-stone-800"
                     >
-                        Global Logistics Services
+                        Integrated Logistics Services
                     </motion.h2>
                 </div>
 
