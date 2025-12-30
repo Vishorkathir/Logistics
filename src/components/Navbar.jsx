@@ -49,7 +49,7 @@ const Navbar = () => {
             <div className="container mx-auto px-6 flex justify-between items-center text-white">
                 <Link to="/" className="text-2xl font-bold flex items-center gap-2" onClick={() => window.scrollTo(0, 0)}>
                     <Anchor className="text-spice-gold" />
-                    <span className="tracking-wider">GLOBAL<span className="text-spice-gold">EXPORT</span></span>
+                    <span className="tracking-wider">MERIXO<span className="text-spice-gold">EXPORT</span></span>
                 </Link>
 
                 {/* Desktop Menu */}

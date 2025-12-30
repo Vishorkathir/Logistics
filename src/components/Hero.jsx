@@ -1,18 +1,73 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import heroBg from '../assets/hero.png';
+import BgVideo from '../assets/BgVideo.mp4';
 import { ArrowRight, Globe, Package } from 'lucide-react';
 
 const Hero = () => {
+    const videoRef = useRef(null);
+    const heroRef = useRef(null);
+
+    useEffect(() => {
+        const videoElement = videoRef.current;
+        const heroElement = heroRef.current;
+
+        // Intersection Observer to detect when Hero section is visible
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        // Hero section is visible - play video with audio
+                        if (videoElement) {
+                            videoElement.muted = false; // Enable audio
+                            videoElement.play().catch(err => {
+                                console.log('Video play failed:', err);
+                                // If autoplay with audio fails, try muted
+                                videoElement.muted = true;
+                                videoElement.play();
+                            });
+                        }
+                    } else {
+                        // Hero section is not visible - pause video
+                        if (videoElement) {
+                            videoElement.pause();
+                            videoElement.muted = true; // Mute when paused
+                        }
+                    }
+                });
+            },
+            {
+                threshold: 0.5, // Trigger when 50% of the section is visible
+            }
+        );
+
+        if (heroElement) {
+            observer.observe(heroElement);
+        }
+
+        // Cleanup observer on component unmount
+        return () => {
+            if (heroElement) {
+                observer.unobserve(heroElement);
+            }
+        };
+    }, []);
+
     return (
-        <div className="relative h-screen w-full overflow-hidden flex items-center justify-center">
-            {/* Background Image with Overlay */}
-            <div
-                className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat scale-105"
-                style={{ backgroundImage: `url(${heroBg})` }}
-            >
-                <div className="absolute inset-0 bg-gradient-to-b from-stone-900/70 via-stone-900/50 to-stone-900/90" />
+        <div ref={heroRef} className="relative h-screen w-full overflow-hidden flex items-center justify-center">
+            {/* Background Video with Overlay */}
+            <div className="absolute inset-0 z-0">
+                <video
+                    ref={videoRef}
+                    loop
+                    playsInline
+                    className="absolute inset-0 w-full h-full object-cover scale-105"
+                >
+                    <source src={BgVideo} type="video/mp4" />
+                    {/* Fallback for browsers that don't support video */}
+                    Your browser does not support the video tag.
+                </video>
+                <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/90" />
             </div>
 
             {/* Content */}
@@ -63,7 +118,7 @@ const Hero = () => {
             </div>
 
             {/* Scroll Indicator */}
-            <motion.div
+            {/* <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, y: [0, 10, 0] }}
                 transition={{ delay: 1, duration: 1.5, repeat: Infinity }}
@@ -72,7 +127,7 @@ const Hero = () => {
                 <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center p-1">
                     <div className="w-1 h-3 bg-white/50 rounded-full" />
                 </div>
-            </motion.div>
+            </motion.div> */}
         </div>
     );
 };
