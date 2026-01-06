@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Phone } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
-import logo from '../assets/logo.png';
+import logo from '../assets/logomain.png';
 import NotificationBell from './NotificationBell';
 import LanguageSelector from './LanguageSelector';
 
@@ -53,8 +53,8 @@ const Navbar = () => {
         >
             <div className="container mx-auto px-6 flex justify-between items-center text-white">
                 <Link to="/" className="text-2xl font-bold flex items-center gap-2" onClick={() => window.scrollTo(0, 0)}>
-                    <img src={logo} alt="Merixo Export Logo" className="h-10 w-auto Node.js backend  object-contain" />
-                    <span className="tracking-wider">MERIXO<span className="text-spice-gold">EXPORT</span></span>
+                    <img src={logo} alt="Merixo Export Logo" className="h-12 w-auto Node.js backend  object-contain rounded-full" />
+                    <span className="tracking-wider">MERIXO<span className="" style={{WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundImage: "linear-gradient(90deg,rgba(255, 102, 0, 1) 0%, rgba(255, 123, 0, 1) 50%, rgba(255, 145, 0, 1) 100%)"}}>LOGISTICS</span></span>
                 </Link>
 
                 {/* Desktop Menu */}
@@ -76,7 +76,7 @@ const Navbar = () => {
                             <span className="absolute left-0 bottom-[-4px] w-0 h-[2px] bg-spice-gold transition-all duration-300 group-hover:w-full" />
                         </Link>
                     ))}
-                    <Link to="/quote">z
+                    <Link to="/quote">
                         <motion.button
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}

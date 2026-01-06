@@ -6,7 +6,7 @@ import GlobalReach from '../components/GlobalReach';
 import Products from '../components/Products';
 import ShippingCalculator from '../components/ShippingCalculator';
 import Testimonials from '../components/Testimonials';
-import Partners from '../components/Partners';
+// import Partners from '../components/Partners';
 import FAQ from '../components/FAQ';
 import Contact from '../components/Contact';
 
@@ -20,7 +20,7 @@ const Home = () => {
             <Products />
             <ShippingCalculator />
             <Testimonials />
-            <Partners />
+            {/* <Partners /> */}
             <FAQ />
             <Contact />
         </>

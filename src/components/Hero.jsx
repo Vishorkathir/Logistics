@@ -90,17 +90,7 @@ const Hero = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                 >
-                    <motion.div 
-                        className="flex justify-center mb-4"
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.5, delay: 0.2 }}
-                    >
-                        <span className="bg-white/10 backdrop-blur-sm border border-white/20 px-3 sm:px-4 py-1 rounded-full text-xs sm:text-sm font-medium tracking-wide uppercase flex items-center gap-2">
-                            <Globe size={14} className="text-spice-gold" />
-                            Trusted Indian Export Partner
-                        </span>
-                    </motion.div>
+                    
 
                     <motion.h1 
                         className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight"
@@ -111,6 +101,7 @@ const Hero = () => {
                         Premium <span className="text-transparent bg-clip-text bg-gradient-to-r from-spice-gold to-spice-red">Indian Products</span> <br className="hidden sm:block" />
                         Delivered <span className="text-transparent bg-clip-text bg-gradient-to-r from-coconut-light to-coconut">Worldwide</span>
                     </motion.h1>
+                    
 
                     <motion.p 
                         className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 mb-6 sm:mb-8 md:mb-10 max-w-3xl mx-auto font-light px-2"
@@ -121,6 +112,20 @@ const Hero = () => {
                         Exporting premium Basmati Rice, Spices, Fresh Fruits & Vegetables to 16+ countries.
                         Quality assured with ISO & FSSAI certifications.
                     </motion.p>
+
+
+                    
+                    <motion.div 
+                        className="flex justify-center mb-4"
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.5, delay: 0.2 }}
+                    >
+                        <span className="bg-white/10 backdrop-blur-sm mt-[-10px] border border-white/20 px-3 sm:px-4 py-1 rounded-full text-xs sm:text-sm font-medium tracking-wide uppercase flex items-center gap-2">
+                            <Globe size={14} className="text-spice-gold" />
+                            Trusted Indian Export Partner
+                        </span>
+                    </motion.div>
 
                     <motion.div 
                         className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center"

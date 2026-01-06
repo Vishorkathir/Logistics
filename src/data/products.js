@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import React from 'react'
 import PL from '../ProductImages/image.png'
 import TC from "../ProductImages/TC.png"
@@ -16,8 +16,6 @@ import Potato from "../ProductImages/Potato.webp"
 import Drumstick from "../ProductImages/Drumstick.png"
 
 
-=======
->>>>>>> cdeab45bb002c85f9914b226865b9d5146a1d4de
 export const categories = [
     { id: 'all', name: 'All Products' },
     { id: 'Rice', name: 'Rice' },
@@ -27,26 +25,26 @@ export const categories = [
 ];
 
 export const products = [
-<<<<<<< HEAD
 
     {
         id: 1,
         name: 'Pulses and Lentils',
         category: '',
         image: PL,
-=======
+    },
+
     {
         id: 1,
         name: 'Basmati Rice',
         category: 'Rice',
         image: 'https://images.unsplash.com/photo-1541525032626-44477c7f7f32?q=80&w=600&auto=format&fit=crop', // Real Unsplash image
->>>>>>> cdeab45bb002c85f9914b226865b9d5146a1d4de
+
         description: 'Sweet water and tender meat, freshly harvested from organic farms.',
         price: '$12 / box'
     },
     {
         id: 2,
-<<<<<<< HEAD
+
         name: 'Tea & Coffee',
         category: '',
         image: TC,
@@ -80,7 +78,7 @@ export const products = [
         name: 'Chilli',
         category: 'spices',
         image: RedChilli,
-=======
+
         name: 'Non-Basmati Rice',
         category: 'Rice',
         image: 'https://images.unsplash.com/photo-1621685450410-d02325988d40?q=80&w=600&auto=format&fit=crop',
@@ -92,42 +90,42 @@ export const products = [
         name: 'Chilli',
         category: 'spices',
         image: 'https://images.unsplash.com/photo-1587049016149-655767b0d77f?q=80&w=600&auto=format&fit=crop',
->>>>>>> cdeab45bb002c85f9914b226865b9d5146a1d4de
+
         description: 'Hand-picked green cardamom pods with intense aroma.',
         price: '$45 / kg'
     },
     {
-<<<<<<< HEAD
+
         id: 6,
         name: 'Masala Blends ',
         category: 'spices',
         image: MasalaBlends,
-=======
+
         id: 4,
         name: 'Masala Blends ',
         category: 'spices',
         image: 'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=600&auto=format&fit=crop',
->>>>>>> cdeab45bb002c85f9914b226865b9d5146a1d4de
+
         description: 'Bold black peppercorns from the Malabar coast.',
         price: '$15 / kg'
     },
     {
-<<<<<<< HEAD
+
         id: 7,
         name: 'Turmeric ',
         category: 'spices',
         image: Turmeric,
-=======
+
         id: 5,
         name: 'Turmeric ',
         category: 'spices',
         image: 'https://images.unsplash.com/photo-1627932620718-f2b3e86c07e0?q=80&w=600&auto=format&fit=crop',
->>>>>>> cdeab45bb002c85f9914b226865b9d5146a1d4de
+
         description: 'High curcumin content turmeric roots, cleaned and polished.',
         price: '$8 / kg'
     },
     {
-<<<<<<< HEAD
+
         id: 8,
         name: 'Cumin',
         category: 'spices',
@@ -172,7 +170,9 @@ export const products = [
         name: 'Onion',
         category: 'freshvegetables',
         image: Onion,
-=======
+        description: 'Crisp and flavorful onions, perfect for all your culinary needs.',
+        price: '$2 / kg'
+    },{
         id: 6,
         name: 'Exotic Dragon Fruit',
         category: 'fruits',
@@ -225,36 +225,36 @@ export const products = [
         name: 'Onion',
         category: 'freshvegetables',
         image: 'https://images.unsplash.com/photo-1556912167-f556f7f57614?q=80&w=600&auto=format&fit=crop',
->>>>>>> cdeab45bb002c85f9914b226865b9d5146a1d4de
+
         description: 'True Ceylon cinnamon quills with delicate flavor.',
         price: '$25 / kg'
     },
     {
-<<<<<<< HEAD
+
         id: 13,
         name: 'potato',
         category: 'freshvegetables',
         image: Potato,
-=======
+
         id: 11,
         name: 'potato',
         category: 'freshvegetables',
         image: 'https://images.unsplash.com/photo-1556912167-f556f7f57614?q=80&w=600&auto=format&fit=crop',
->>>>>>> cdeab45bb002c85f9914b226865b9d5146a1d4de
+
         description: 'True Ceylon cinnamon quills with delicate flavor.',
         price: '$25 / kg'
     },
     {
-<<<<<<< HEAD
+
         id: 14,
         name: 'drumstick',
         category: 'freshvegetables',
         image: Drumstick,
         description: 'True Ceylon cinnamon quills with delicate flavor.',
         price: '$25 / kg'
-    }
+    },
 
-=======
+    {
         id: 12,
         name: 'drumstick',
         category: 'freshvegetables',
@@ -262,5 +262,5 @@ export const products = [
         description: 'True Ceylon cinnamon quills with delicate flavor.',
         price: '$25 / kg'
     }   
->>>>>>> cdeab45bb002c85f9914b226865b9d5146a1d4de
+
 ];

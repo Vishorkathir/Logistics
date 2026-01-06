@@ -52,19 +52,12 @@ const ServiceDetail = () => {
                             className="relative rounded-xl overflow-hidden shadow-2xl aspect-video bg-black"
                         >
                             {/* Using a video tag with the stock footage */}
-                            <video
-                                src={service.video}
-                                autoPlay
-                                loop
-                                muted
-                                playsInline
+                            <img
+                                src={service.image}
+                                alt={`${service.title} operation view`}
                                 className="w-full h-full object-cover opacity-80"
                             />
-                            <div className="absolute inset-0 flex items-center justify-center">
-                                <div className="bg-white/10 backdrop-blur-md border border-white/20 px-6 py-2 rounded-full text-white font-medium">
-                                    Live Operation View
-                                </div>
-                            </div>
+                            
                         </motion.div>
 
                         {/* Content */}
@@ -77,12 +70,27 @@ const ServiceDetail = () => {
                             <div className="space-y-4">
                                 <h4 className="font-semibold text-stone-800">Key Benefits:</h4>
                                 <ul className="space-y-3">
-                                    {[1, 2, 3].map((_, i) => (
+                                    {service.features ? service.features.map((feature, i) => (
                                         <li key={i} className="flex items-center gap-3 text-stone-600">
                                             <CheckCircle size={20} className="text-spice-gold" />
-                                            <span>Premium quality assurance step {i + 1}</span>
+                                            <span>{feature}</span>
                                         </li>
-                                    ))}
+                                    )) : (
+                                        <>
+                                            <li className="flex items-center gap-3 text-stone-600">
+                                                <CheckCircle size={20} className="text-spice-gold" />
+                                                <span>Dedicated account manager for personalized support</span>
+                                            </li>
+                                            <li className="flex items-center gap-3 text-stone-600">
+                                                <CheckCircle size={20} className="text-spice-gold" />
+                                                <span>24/7 real-time tracking and monitoring</span>
+                                            </li>
+                                            <li className="flex items-center gap-3 text-stone-600">
+                                                <CheckCircle size={20} className="text-spice-gold" />
+                                                <span>Competitive pricing with transparent quotes</span>
+                                            </li>
+                                        </>
+                                    )}
                                 </ul>
                             </div>
 
