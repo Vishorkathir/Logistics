@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Target, Eye, Heart, Users, Globe, Shield } from 'lucide-react';
+import founderImage from '../assets/Founder.png';
 
 const AboutUs = () => {
     const values = [
@@ -11,7 +12,7 @@ const AboutUs = () => {
     ];
 
     const team = [
-        { name: 'Rajesh Kumar', role: 'Founder & CEO', image: 'https://randomuser.me/api/portraits/men/75.jpg' },
+        { name: 'Sheshuaakaash', role: 'Founder & CEO', image: founderImage },
         { name: 'Priya Patel', role: 'Operations Director', image: 'https://randomuser.me/api/portraits/women/65.jpg' },
         { name: 'Amit Singh', role: 'Export Manager', image: 'https://randomuser.me/api/portraits/men/32.jpg' },
         { name: 'Sunita Reddy', role: 'Quality Assurance', image: 'https://randomuser.me/api/portraits/women/44.jpg' },

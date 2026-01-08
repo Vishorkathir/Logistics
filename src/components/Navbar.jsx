@@ -25,7 +25,7 @@ const Navbar = () => {
         { name: 'Products', path: '/catalog' },
         { name: 'About', path: '/about' },
         { name: 'Track Order', path: '/track' },
-        { name: 'Contact', path: '/#contact' },
+        { name: 'Contact', path: '/quote' },
     ];
 
     // Helper to handle hash scrolling if on same page, or navigation

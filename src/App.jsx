@@ -9,7 +9,7 @@ import ServicesPage from './pages/ServicesPage';
 import ServiceDetail from './pages/ServiceDetail';
 import TrackingPage from './pages/TrackingPage';
 import AboutUs from './pages/AboutUs';
-import Chatbot from './components/Chatbot';
+// import Chatbot from './components/Chatbot';
 import WhatsAppButton from './components/WhatsAppButton';
 
 function App() {
@@ -29,8 +29,8 @@ function App() {
               <Route path="/about" element={<AboutUs />} />
             </Routes>
           </main>
-          <Chatbot />
           <WhatsAppButton />
+          {/* <Chatbot /> */}
         </div>
       </Router>
     </LanguageProvider>

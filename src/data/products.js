@@ -17,6 +17,25 @@ import Drumstick from "../ProductImages/Drumstick.png"
 import mango from "../ProductImages/mango.jpg"
 
 
+
+
+
+import Coriander from "../ProductImages/Coriander.png"
+import Cardamom from "../ProductImages/Cardamom.png"
+import Tomato from "../ProductImages/Tomato.png"
+import Carrot from "../ProductImages/Carrot.png"
+import Cabbage from "../ProductImages/Cabbage.png"
+import Cauliflower from "../ProductImages/Cauliflower.png"
+import Apple from "../ProductImages/apple.webp"
+import Orange from "../ProductImages/Orange.png"
+import Grapes from "../ProductImages/Grapes.png"
+import Papaya from "../ProductImages/Papaya.png"
+import Watermelon from "../ProductImages/Watermelon.png"
+import Ginger from "../ProductImages/Ginger.png"
+import Garlic from "../ProductImages/Garlic.png"
+import Cloves from "../ProductImages/Cloves.png"
+
+
 export const categories = [
     { id: 'all', name: 'All Products' },
     { id: 'Rice', name: 'Rice' },
@@ -188,6 +207,120 @@ export const products = [
         image: Drumstick,
         description: 'True Ceylon cinnamon quills with delicate flavor.',
         price: '$25 / kg'
+    },
+
+    // New Products Added
+    {
+        id: 16,
+        name: 'Coriander',
+        category: 'spices',
+        image: Coriander,
+        description: 'Fresh aromatic coriander seeds with citrusy notes.',
+        price: '$12 / kg'
+    },
+    {
+        id: 17,
+        name: 'Cardamom',
+        category: 'spices',
+        image: Cardamom,
+        description: 'Premium green cardamom pods with intense flavor and aroma.',
+        price: '$45 / kg'
+    },
+    {
+        id: 18,
+        name: 'Cloves',
+        category: 'spices',
+        image: Cloves,
+        description: 'Whole cloves with strong aromatic properties for cooking.',
+        price: '$35 / kg'
+    },
+    {
+        id: 19,
+        name: 'Ginger',
+        category: 'spices',
+        image: Ginger,
+        description: 'Fresh ginger root with pungent flavor, great for cooking and tea.',
+        price: '$8 / kg'
+    },
+    {
+        id: 20,
+        name: 'Garlic',
+        category: 'spices',
+        image: Garlic,
+        description: 'High quality garlic bulbs with strong flavor and health benefits.',
+        price: '$6 / kg'
+    },
+    {
+        id: 21,
+        name: 'Tomato',
+        category: 'freshvegetables',
+        image: Tomato,
+        description: 'Fresh and juicy tomatoes, perfect for salads and cooking.',
+        price: '$3 / kg'
+    },
+    {
+        id: 22,
+        name: 'Carrot',
+        category: 'freshvegetables',
+        image: Carrot,
+        description: 'Crunchy and sweet carrots rich in vitamins and minerals.',
+        price: '$4 / kg'
+    },
+    {
+        id: 23,
+        name: 'Cabbage',
+        category: 'freshvegetables',
+        image: Cabbage,
+        description: 'Fresh green cabbage, great for salads and stir-fry dishes.',
+        price: '$2.5 / kg'
+    },
+    {
+        id: 24,
+        name: 'Cauliflower',
+        category: 'freshvegetables',
+        image: Cauliflower,
+        description: 'White cauliflower heads, versatile vegetable for various dishes.',
+        price: '$5 / kg'
+    },
+    {
+        id: 25,
+        name: 'Apple',
+        category: 'fruits',
+        image: Apple,
+        description: 'Crisp and sweet apples, packed with nutrients and fiber.',
+        price: '$8 / kg'
+    },
+    {
+        id: 26,
+        name: 'Orange',
+        category: 'fruits',
+        image: Orange,
+        description: 'Juicy oranges loaded with vitamin C and refreshing flavor.',
+        price: '$6 / kg'
+    },
+    {
+        id: 27,
+        name: 'Grapes',
+        category: 'fruits',
+        image: Grapes,
+        description: 'Sweet and seedless grapes, perfect snack and dessert option.',
+        price: '$10 / kg'
+    },
+    {
+        id: 28,
+        name: 'Papaya',
+        category: 'fruits',
+        image: Papaya,
+        description: 'Tropical papaya with sweet orange flesh and digestive enzymes.',
+        price: '$4 / kg'
+    },
+    {
+        id: 29,
+        name: 'Watermelon',
+        category: 'fruits',
+        image: Watermelon,
+        description: 'Large watermelons with sweet red flesh, perfect for summer.',
+        price: '$3 / kg'
     },
 
     
